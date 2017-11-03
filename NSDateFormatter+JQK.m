@@ -14,6 +14,7 @@
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
     dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
     dateFormatter.dateFormat = @"EEE, dd MMM yyyy HH:mm:ss z";
+    dateFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
     return dateFormatter;
 }
 
@@ -21,7 +22,7 @@
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
     dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
     dateFormatter.dateFormat = @"EEE, dd-MMM-yy HH:mm:ss z";
+    dateFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
     return dateFormatter;
 }
-
 @end
